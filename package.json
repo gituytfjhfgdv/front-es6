@@ -1,0 +1,25 @@
+{
+  "name": "es6_projects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ls",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "./node_modules/.bin/webpack-dev-server --inline --hot --history-api-fallback --content-base public/ --port 3000 --watch",
+    "build": "yarn run webpack",
+    "webpack": "webpack --colors --progress"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-loader": "^7.1.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^4.3.0",
+    "webpack": "^3.4.1"
+  },
+  "dependencies": {
+    "babel-eslint": "^7.2.3",
+    "babel-polyfill": "^6.23.0"
+  }
+}
