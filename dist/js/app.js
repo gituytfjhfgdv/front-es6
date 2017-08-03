@@ -87,34 +87,34 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Friend = function (_Person) {
-    _inherits(Friend, _Person);
+  _inherits(Friend, _Person);
 
-    function Friend(name) {
-        _classCallCheck(this, Friend);
+  function Friend(name) {
+    _classCallCheck(this, Friend);
 
-        return _possibleConstructorReturn(this, (Friend.__proto__ || Object.getPrototypeOf(Friend)).call(this, name));
+    return _possibleConstructorReturn(this, (Friend.__proto__ || Object.getPrototypeOf(Friend)).call(this, name));
+  }
+
+  _createClass(Friend, [{
+    key: 'callName',
+    value: function callName() {
+      console.log(this.name);
     }
+  }, {
+    key: 'foo',
+    value: function foo() {}
+  }, {
+    key: 'yahoo',
+    value: function yahoo() {}
+  }, {
+    key: 'hoge',
+    value: async function hoge() {
+      await this.foo();
+      this.yahoo();
+    }
+  }]);
 
-    _createClass(Friend, [{
-        key: 'callName',
-        value: function callName() {
-            console.log(this.name);
-        }
-    }, {
-        key: 'foo',
-        value: function foo() {}
-    }, {
-        key: 'yahoo',
-        value: function yahoo() {}
-    }, {
-        key: 'hoge',
-        value: async function hoge() {
-            await foo();
-            yahoo();
-        }
-    }]);
-
-    return Friend;
+  return Friend;
 }(_person2.default);
 
 var friend = new Friend('momo');
@@ -129,15 +129,15 @@ friend.callName();
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var Person = function Person(name) {
-    _classCallCheck(this, Person);
+  _classCallCheck(this, Person);
 
-    this.name = name;
+  this.name = name;
 };
 
 exports.default = Person;

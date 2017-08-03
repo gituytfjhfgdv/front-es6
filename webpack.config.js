@@ -1,7 +1,7 @@
 module.exports = {
   context: __dirname + '/src',
   entry: {
-    'app': './js/app',
+    'app': './js/app'
   },
   output: {
     path: __dirname + '/dist/js', // 出力先のパス
@@ -9,12 +9,12 @@ module.exports = {
   },
   module: {
     rules: [{
-        test: /\.js$/, 
-        exclude: /node_modules/, 
-        query:{
-          presets: ['react', 'es2015']
-        },
-        loader: "babel-loader"
+      test: /\.js$/, 
+      exclude: /node_modules/, 
+      query: {
+        presets: ['react', 'es2015']
+      },
+      loader: 'babel-loader'
     }]
   }
-};
+}
