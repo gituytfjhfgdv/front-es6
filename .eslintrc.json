@@ -11,25 +11,24 @@
     "error"	2	ルールに違反するとエラーにします
 */
 {
-    "extends": "standard",
-    "root": true,
-    // "parser": "babel-eslint",
-    "env": {
-        "node": true,
-        "es6": true // es module機能は有効にならない
-    },
-    "parserOptions": { 
-        "sourceType": "module"
-    },
-    "rules": {
-        // allow paren-less arrow functions
-        "arrow-parens": 0,
-        // allow async-await
-        "generator-star-spacing": 0,
-        "no-useless-constructor": 0,
-        "no-extra-bind": 1,
-        "handle-callback-err": 1,
-        "prefer-promise-reject-errors": 1,
-        "space-before-function-paren": 0
-    }
+  // "extends": "standard",
+  "parserOptions": { 
+    "sourceType": "module"
+  },
+  // "root": true,
+  "env": {
+    "node": true,
+    "es6": true // es module機能は有効にならない
+  },
+  "rules": {
+    // allow paren-less arrow functions
+    "arrow-parens": 0,
+    // allow async-await
+    "generator-star-spacing": 0,
+    "no-useless-constructor": 0,
+    "no-extra-bind": 1,
+    "handle-callback-err": 1,
+    "prefer-promise-reject-errors": 1,
+    "space-before-function-paren": 0
+  }
 }

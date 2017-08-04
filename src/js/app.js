@@ -1,5 +1,8 @@
+// import 'reify' //require('reify')
+// import 'async-to-gen/register' //require('async-to-gen/register')
+// import require('./some-module-with-async-functions')
 import Person from './person'
-import 'babel/polyfill'
+// import 'babel/polyfill'
 
 class Friend extends Person {
   constructor(name) {
@@ -9,13 +12,14 @@ class Friend extends Person {
     console.log(this.name)
   }
   foo() {
-
+    return 'hoges'
   }
   yahoo() {
 
   }
-  async hoge() {
-    await this.foo()
+  async test() {
+    let res = await this.foo()
+    console.log(res)
     this.yahoo()
   }
 }
