@@ -1,0 +1,5 @@
+// https://www.npmjs.com/package/babel-plugin-transform-runtime　からコピペしただけ
+// without options 
+{
+  "plugins": ["transform-runtime"]
+}

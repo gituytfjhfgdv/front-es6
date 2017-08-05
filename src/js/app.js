@@ -1,4 +1,5 @@
 import Person from './person'
+import Gene from './generator'
 
 class Friend extends Person {
   constructor(name) {
