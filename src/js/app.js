@@ -1,5 +1,7 @@
+'use strict'
+
 import Person from './person'
-import Gene from './generator'
+import c from './generator'
 
 class Friend extends Person {
   constructor(name) {
@@ -7,6 +9,7 @@ class Friend extends Person {
   }
   callName() {
     console.log(this.name)
+    c.count() // count呼び出し
   }
 }
 

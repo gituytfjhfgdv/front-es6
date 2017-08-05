@@ -18,5 +18,6 @@ module.exports = {
         }
       }
     ]
-  }
+  },
+  devtool: 'inline-source-map' // // ソースのファイル名と行数を表示するよう設定
 }
