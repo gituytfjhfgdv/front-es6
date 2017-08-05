@@ -1,5 +1,6 @@
 # front-es6
 
+Style helped by [Bulma](http://bulma.io/).
 
 This repository is to learning.
 Objective is follwings
