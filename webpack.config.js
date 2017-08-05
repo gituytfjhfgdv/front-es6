@@ -12,10 +12,19 @@ module.exports = {
       { 
         test: /\.js$/, 
         exclude: /node_modules/, 
-        loader: "babel-loader", 
-        query:{
+        loader: 'babel-loader', 
+        query: {
           presets: ['es2015', 'stage-3']
         }
+      },
+      { test: /\.css$/, loader: 'style!css' },
+      {
+        test: /\.sass$/,
+        loaders: [
+          'style',
+          'css',
+          'sass'
+        ]
       }
     ]
   },

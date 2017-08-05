@@ -1,13 +1,5 @@
 'use strict'
-
-// import Promise from 'bluebird'
-
-// let serveFullCourse = () => {
-//   return Promise.coroutine(function* () {
-
-//   })
-// }
-class Counter {
+class CounterWithGenerator {
   static count() {
     console.log('count!!!がよばれました！')
     function *gene() {
@@ -24,6 +16,13 @@ class Counter {
     let gen = gene()
     console.log('start')
     gen.next()
+    console.log('next')
+    gen.next()
+    console.log('next')
+    gen.next()
+    console.log('next')
+    gen.next()
+    console.log('last!')
   }
 }
-export default Counter
+export default CounterWithGenerator
