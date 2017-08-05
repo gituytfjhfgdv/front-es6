@@ -11,7 +11,7 @@
     "error"	2	ルールに違反するとエラーにします
 */
 {
-  // "extends": "standard",
+  "extends": "standard",
   "parserOptions": { 
     "sourceType": "module"
   },
@@ -23,12 +23,12 @@
   "rules": {
     // allow paren-less arrow functions
     "arrow-parens": 0,
-    // allow async-await
     "generator-star-spacing": 0,
     "no-useless-constructor": 0,
     "no-extra-bind": 1,
     "handle-callback-err": 1,
     "prefer-promise-reject-errors": 1,
-    "space-before-function-paren": 0
+    "space-before-function-paren": 0,
+    "no-unused-vars":  [1, {"vars" : "all", "args" : "after-used"} ]
   }
 }

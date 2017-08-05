@@ -82,12 +82,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // import 'reify' //require('reify')
-// import 'async-to-gen/register' //require('async-to-gen/register')
-// import require('./some-module-with-async-functions')
-
-
-// import 'babel/polyfill'
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Friend = function (_Person) {
   _inherits(Friend, _Person);
@@ -103,27 +98,12 @@ var Friend = function (_Person) {
     value: function callName() {
       console.log(this.name);
     }
-  }, {
-    key: 'foo',
-    value: function foo() {
-      return 'hoges';
-    }
-  }, {
-    key: 'yahoo',
-    value: function yahoo() {}
-  }, {
-    key: 'test',
-    value: async function test() {
-      var res = await this.foo();
-      console.log(res);
-      this.yahoo();
-    }
   }]);
 
   return Friend;
 }(_person2.default);
 
-var friend = new Friend('momo');
+var friend = new Friend('Ryo');
 
 friend.callName();
 
