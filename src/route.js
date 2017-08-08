@@ -1,7 +1,6 @@
 'use strict'
 import Person from './js/person'
 import c from './js/generator'
-//scssのコンパイル
 import './route.scss'
 
 class Friend extends Person {
