@@ -1,7 +1,8 @@
 'use strict'
-
-import Person from './person'
-import c from './generator'
+import Person from './js/person'
+import c from './js/generator'
+//scssのコンパイル
+import './route.scss'
 
 class Friend extends Person {
   constructor(name) {
