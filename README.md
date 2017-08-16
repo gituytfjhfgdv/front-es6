@@ -8,7 +8,7 @@ Objective is follwings
 <Must!>
 - can use es6 syntax
   like 
-    - await/async
+    - await/async :white_check_mark:
     - arrow function :white_check_mark:
     - class expression :white_check_mark:
     - import/ export :white_check_mark:
